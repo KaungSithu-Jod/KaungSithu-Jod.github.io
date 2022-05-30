@@ -1,0 +1,234 @@
+h1 {
+  color: violet;
+  /* color: #f0f; 
+    color: #ff00ff; 
+    color: rgb(255,0,255); */
+  text-align: center;
+  text-transform: uppercase;
+}
+
+small {
+  color: gray;
+  display: block;
+  text-indent: 10px;
+  line-height: 30px;
+  letter-spacing: 10px;
+  text-align: justify;
+}
+
+/* Universal Selector */
+* {
+  margin: 0px;
+}
+
+/* Tag/Element Selector */
+span {
+  color: azure;
+}
+
+/* Attribute Selector */
+a[target="_blank"] {
+  color: silver;
+}
+
+/* Id selector */
+#p1 {
+  color: burlywood;
+  word-spacing: 10px;
+}
+
+/* Class Selector */
+.c1 {
+  color: blueviolet;
+  letter-spacing: 5px;
+  line-height: 20px;
+}
+
+/* Descendent Selector */
+p.desc a {
+  color: royalblue;
+}
+
+/* Child Selector */
+p.child > a {
+  color: red;
+}
+
+/* Pseudo Selector */
+a:link {
+  color: red;
+}
+a:hover {
+  color: green;
+}
+a:active {
+  color: yellow;
+}
+a:visited {
+  color: indianred;
+}
+
+/* Target */
+:target {
+  color: red;
+  border: 1px solid black;
+  font-size: 30px;
+  word-spacing: 30px;
+}
+
+/* Border */
+.borderone {
+  border: 10px solid red;
+}
+.bordertwo {
+  border-bottom: 10px solid green;
+}
+
+.borderstyle {
+  border-style: dotted;
+}
+.borderstylemix {
+  /* border-style: solid; */
+  /* all four */
+  /* border-style: solid dotted; */
+  /* left right & top bottom */
+  /* border-style: solid dotted dashed; */
+  /* top & LR & bottom */
+  border-style: dashed solid dotted double;
+  /* top right bottom left */
+}
+.borderwidth {
+  border-width: 20px 1px 50px 75px;
+  border-style: solid;
+}
+
+/* Margin */
+.marginone {
+  border: 1px solid black;
+  margin: 50px 10px 100px;
+}
+.margin {
+  margin-left: 100px;
+  border: 1px solid red;
+}
+
+/* Padding */
+.paddingone {
+  border: 1px solid green;
+  padding: 100px;
+}
+
+.padding {
+  border: 1px solid red;
+  padding-right: 100px;
+}
+
+/* Layout */
+.inline {
+  border: 1px solid yellowgreen;
+  display: inline-block;
+  width: 400px;
+}
+.block {
+  border: 1px solid salmon;
+  display: inline-block;
+  width: 400px;
+}
+
+/* Float */
+.float_left img {
+  float: left;
+  width: 40%;
+}
+.clear {
+  clear: both;
+}
+.float_right img {
+  width: 40%;
+  float: right;
+}
+
+/* Grid */
+.GridOne div, .GridTwo div, .GridThree div, .GridFour div, .GridFive div{
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.GridOne, .GridTwo, .GridThree, .GridFour, .GridFive {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.GridTwo {
+  grid-column-gap: 40px;
+}
+
+.GridThree {
+  grid-row-gap: 40px;
+}
+
+.GridFour {
+  grid-gap: 40px;
+}
+
+.ColumnAdd {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.RowAdd {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/* Position */
+.RelativeParent {
+  border: 1px solid red;
+  width: 1000px;
+  height: 500px;
+}
+.Relative {
+  border: 1px solid green;
+  width: 500px;
+  height: 250px;
+  position: relative;
+  top: 50px;
+  left: 100px;
+}
+
+.AbsoluteParent {
+  position: relative;
+  border: 1px solid blue;
+  width: 1000px;
+  height: 500px;
+}
+.Absolute {
+  border: 1px solid yellow;
+  width: 500px;
+  height: 250px;
+  position: absolute;
+  top: 150px;
+  right: 100px;
+}
+
+.fixed {
+  position: fixed;
+  top: 25px;
+  right: 200px;
+}
+
+/* Fonts */
+.online {
+  font-family: 'Pacifico', cursive;
+}
+
+@font-face {
+  font-family: Smooch;
+  src: url(Smooch/Smooch-Regular.ttf);
+}
+
+.offline {
+  font-family: Smooch;
+  font-size: 30px;
+}
