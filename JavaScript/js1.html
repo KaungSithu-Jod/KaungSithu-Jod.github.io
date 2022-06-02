@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 13; //Global Variable
+        console.log(a);
+        let b = 14; //Block Scope Variable
+        console.log(b);
+        const c = 15;//Constant Variable
+        console.log(c);
+
+        a = 103;
+        console.log(a);
+        b = 104;
+        console.log(b);
+        // c = 105;
+        // console.log(c);
+
+        var a = 130;
+        console.log(a);
+        // let b = 140:
+        // console.log(b);
+        // const c = 150;
+        // console.log(c);
+
+        var x = 12;
+        if (x==12) {
+            var num1 = 16;
+            let num2 = 17;
+            console.log(num1);
+            console.log(num2);
+        }
+        console.log(num1);
+        // console.log(num2);
+        let d, e, f, g;
+        let i = null;
+        console.log(i);
+        console.log(d);
+    </script>
+</body>
+</html>
