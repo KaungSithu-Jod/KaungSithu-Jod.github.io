@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" cellspacing="0" cellpadding="0">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    <br><br>
+    <form name="myForm"">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age">
+        <br><br>
+        <button type="button" onclick="add()">Add</button>
+    </form>
+
+    <script>
+        var data = [];
+        function add(){
+            let name = document.myForm.name.value;
+            console.log(name);
+            let age = document.myForm.age.value;
+            console.log(age);
+            
+            let input = [name, age];
+            data.push(input);
+            let myData = '';
+            let j = data.length;
+            for (let i=0; i < j; i ++){ 
+                myData += `<tr>
+                    <td>${i++}</td>
+                    <td>${data[i][0]}</td>
+                    <td>${data[i][1]}</td>
+                </tr>`;
+            }
+            let tbody = document.querySelector('#tbody');
+            tbody.innerHTML = myData;
+            return(data);
+        }
+    </script>
+</body>
+</html>
